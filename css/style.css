@@ -1,10 +1,19 @@
 body{
     font-family:Arial, Helvetica, sans-serif ;
     background-image: url(../img/background1.jpg);
+    background-repeat: round;
+    display: flex;
+}
+svg {
+	width: calc(20% - 2rem);
+	height: auto;
+	background: #222;
+	margin: 1rem;
 }
 .main_screeen{
     padding: 20px;
     display: inline-flex;
+    flex-wrap: wrap;
     
     
 }
@@ -17,14 +26,17 @@ body{
     border: 1px solid rgb(219, 217, 217);
     width: 300px;
     margin-right: 20px;
+    margin-bottom: 20px;
     padding: 10px;
-   
-    background-color: rgb(237, 219, 219);
+    border-radius: 5px;
+
+    background-color: rgb(255, 255, 255);
  
 }
 
- p {
- font-size: 12px;
+
+ p , .input_data_task, .data_task{
+ font-size: 14px;
  color: rgb(58, 57, 57);
  margin: 3px;
 }
@@ -39,7 +51,7 @@ h3  {
     margin: 10px;
     background-color: rgb(204, 205, 180);
 }
-.input_task, .add_memo_task{
+.input_task, .add_memo_task, .input_group{
     width: 90%;
     height: 30px;
     margin-left: 0;
@@ -54,7 +66,7 @@ h3  {
     height: 30px;
     font-size: 14px;
 }
-.btn_add_task{
+.btn_add_task, .btn_add_group{
     border-radius: 5px;
     color: rgb(255, 254, 254);
     background-color: rgb(8, 124, 160);
@@ -64,17 +76,19 @@ h3  {
     font-weight: 600;
     font-size: 14px;
     margin-bottom: 20px;
+    margin-top: 20px;
 }
-.backlog,.inWork,.testing,.done,.groupTask{
+.groupTask{
    margin-right: 20px; 
+   margin-top: 20px; 
     width: 300px;
     padding: 10px;
-    background-color: rgb(237, 219, 219);
+    background-color: rgb(255, 255, 255);
 }
 .btn_del_task{
     width: 20px;
     height: 20px;
-    background-color: rgb(19, 19, 19);
+    background-color: rgb(255, 4, 4);
     margin: 0px;
     text-align: right;
     color:aliceblue;
@@ -85,7 +99,7 @@ h3  {
     border: 1px solid black;
     border-radius: 3px;
     margin-bottom: 5px;
-    background-color: rgb(173, 173, 173);
+    background-color: rgb(193, 193, 193);
     min-height: 100px;
     padding: 5px;
    /*  position: absolute; */
@@ -104,8 +118,11 @@ span  {
 .header_task{
     display: flex;
     justify-content: space-between;
-    background-color: rgb(8, 124, 160);
-    height: 20px;
+    background-color: rgb(44,44,47);
+    height: 5px;
+    color : white;
+    padding: 10px;
+    border-radius: 5px;
     margin-bottom: 10px;
     align-items: center;
 
@@ -115,13 +132,15 @@ span  {
    padding: 5px;
     color: white;
     width: 40px;
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
     border-radius: 2px;
 
 }
 .div_Hight_prioritet{   
     background-color: rgb(244, 9, 9);
+    padding: 5px;
+    font-size: 14px;
 }
 .div_Medium_prioritet{   
     background-color: rgb(204, 241, 18);
@@ -130,4 +149,36 @@ span  {
 .div_Low_prioritet{   
     background-color: rgb(108, 246, 38);
     color: rgb(25, 24, 24);
+}
+.add_memo_task{
+    height: 80px;
+}
+.btn_arov_task{
+
+border-radius: 5px;
+    color: rgb(255, 254, 254);
+    background-color: rgb(8, 124, 160);
+    width: 50px;
+    height: 30px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+.btn_edit_task{
+    background-image: url(../img/1.png);
+  /*   background-size: 100%; */
+  background-repeat: round;
+    width: 30px;
+}
+.div_footer_task{
+    display: flex;
+    justify-content: space-between; 
+}
+.data_task{
+    text-align: right;
+    text-decoration: overline;
+    font-size: 14px;
+    font-family:  Calibri, 'Trebuchet MS', sans-serif;
+
 }

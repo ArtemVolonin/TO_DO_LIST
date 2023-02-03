@@ -1,0 +1,87 @@
+h1 {
+  text-align: center;
+}
+.managemas {
+  display: flex;
+}
+.managemas .aletackmes {
+  flex: 1;
+  margin: 10px;
+  text-align: center;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+  overflow: hidden;
+}
+.managemas .aletackmes .makupes {
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 15px;
+  padding-bottom: 60px;
+  color: #ffffff;
+}
+.managemas .aletackmes .nimplemes {
+  box-sizing: border-box;
+  font-size: 35px;
+  font-weight: bold;
+  background-color: #000000;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: #fdf7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: -60px auto 0px auto;
+  z-index: 2;
+  position: relative;
+  box-shadow: inset 0px -10px 8px -8px rgba(49, 46, 46, 0.51);
+}
+.managemas .aletackmes .akusoluson {
+  padding: 15px;
+  padding-top: 45px;
+  margin-top: -45px;
+  background-color: #ffffff;
+  box-shadow: 0px -4px 5px rgba(0, 0, 0, 0.15);
+}
+.managemas .aletackmes .icon {
+  font-size: 50px;
+}
+.managemas .aletackmes:nth-child(1) .makupes, .managemas .aletackmes:nth-child(1) .nimplemes {
+  background-color: #e34f26;
+}
+.managemas .aletackmes:nth-child(1) .icon {
+  color: #e34f26;
+}
+.managemas .aletackmes:nth-child(2) .makupes, .managemas .aletackmes:nth-child(2) .nimplemes {
+  background-color: #1b73ba;
+}
+.managemas .aletackmes:nth-child(2) .icon {
+  color: #1b73ba;
+}
+.managemas .aletackmes:nth-child(3) .makupes, .managemas .aletackmes:nth-child(3) .nimplemes {
+  background-color: #f8d23c;
+}
+.managemas .aletackmes:nth-child(3) .icon {
+  color: #f8d23c;
+}
+.managemas .aletackmes:nth-child(4) .makupes, .managemas .aletackmes:nth-child(4) .nimplemes {
+  background-color: #7478ae;
+}
+.managemas .aletackmes:nth-child(4) .icon {
+  color: #7478ae;
+}
+.managemas .aletackmes:nth-child(5) .makupes, .managemas .aletackmes:nth-child(5) .nimplemes {
+  background-color: #de8a00;
+}
+.managemas .aletackmes:nth-child(5) .icon {
+  color: #de8a00;
+}
+@media (max-width: 767px) {
+  .managemas {
+  flex-wrap: wrap;
+  }
+  .managemas .aletackmes {
+  flex: 0 0 100%;
+  }
+}
