@@ -11,7 +11,7 @@ svg {
 	margin: 1rem;
 }
 .main_screeen{
-    padding: 20px;
+  
     display: inline-flex;
     flex-wrap: wrap;
     
@@ -80,7 +80,7 @@ h3  {
 }
 .groupTask{
    margin-right: 20px; 
-   margin-top: 20px; 
+   margin-bottom: 20px; 
     width: 300px;
     padding: 10px;
     background-color: rgb(255, 255, 255);
@@ -89,6 +89,7 @@ h3  {
     width: 20px;
     height: 20px;
     background-color: rgb(255, 4, 4);
+    border-radius: 50%;
     margin: 0px;
     text-align: right;
     color:aliceblue;
@@ -112,8 +113,9 @@ span  {
     margin: 10px;
 }
 .memo_task {
- padding: 10px;
  margin-bottom: 20px;
+ font-size: 16px;
+ font-family:  Arial, Helvetica, sans-serif;
 }
 .header_task{
     display: flex;

@@ -49,6 +49,7 @@ class Group {
    //---------addTask------------------
    addTask(id_group, input_value, memo_value, type_task, prioritet_task, data_task)
     {
+      this.id = this.TaskList.length+1; 
       this.id_group = id_group; 
       this.div_group_p.hidden = true;
       this.div_task = document.createElement("div");
@@ -83,9 +84,10 @@ class Group {
       this.btn_del_task.classList.add("btn_del_task");
       this.div_task.classList.add("div_task");
       this.div_task_header.classList.add("header_task");
-      this.div_task_memo.classList.add("memo_task");      
-      this.div_task_memo.textContent = memo_value;
-      this.p_task.textContent = input_value;
+      this.div_task_memo.classList.add("memo_task"); 
+      this.div_task_memo.innerHTML = `<b> ${input_value} </b> <p>${memo_value}</p>`    
+      //this.div_task_memo.textContent += memo_value;
+      this.p_task.textContent = 'Задача #'+(this.id);
       // btn_del click
       this.btn_del_task.addEventListener("click", function (e) {
          this.parentElement.parentElement.parentElement.remove();
