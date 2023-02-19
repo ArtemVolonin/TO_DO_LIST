@@ -9,6 +9,7 @@ svg {
 	height: auto;
 	background: #222;
 	margin: 1rem;
+
 }
 .main_screeen{
   
@@ -20,7 +21,7 @@ svg {
 .main_screeen div{
 
     border-radius: 5px;
-    height: auto;
+
 }
 .add_new_task_menu{
     border: 1px solid rgb(219, 217, 217);
@@ -66,7 +67,7 @@ h3  {
     height: 30px;
     font-size: 14px;
 }
-.btn_add_task, .btn_add_group{
+   .btn_add_task, .btn_add_group{
     border-radius: 5px;
     color: rgb(255, 254, 254);
     background-color: rgb(8, 124, 160);
@@ -86,12 +87,9 @@ h3  {
     background-color: rgb(255, 255, 255);
 }
 .btn_del_task{
-    width: 20px;
     height: 20px;
     background-color: rgb(255, 4, 4);
     border-radius: 50%;
-    margin: 0px;
-    text-align: right;
     color:aliceblue;
     
 }
@@ -143,6 +141,7 @@ span  {
     background-color: rgb(244, 9, 9);
     padding: 5px;
     font-size: 14px;
+    height: 20px;
 }
 .div_Medium_prioritet{   
     background-color: rgb(204, 241, 18);
@@ -177,10 +176,48 @@ border-radius: 5px;
     display: flex;
     justify-content: space-between; 
 }
-.data_task{
+.p_data_task{
     text-align: right;
     text-decoration: overline;
     font-size: 14px;
     font-family:  Calibri, 'Trebuchet MS', sans-serif;
 
+}
+.input_task_area, .input_task_memo_b{
+    outline: none;
+    border: none;
+    background-color: rgb(193, 193, 193);
+    margin-bottom: 10px;
+    width: 100%;
+}
+.input_task_memo_b{
+    font-weight: bold;
+}
+.input_task_area {
+    display: block;
+  height: 100px;
+    box-sizing: border-box;
+    margin: 0 0 5px 0;
+    padding: 10px;
+    scroll-behavior: inherit;
+    background-color: #fff;
+    min-height: 54px;
+    font-size: 14px;
+    line-height: 1.2;
+}
+.input_data_task {
+    outline: none;
+    border: none;
+    background-color: rgb(193, 193, 193);
+    margin-bottom: 10px;
+
+}
+.btn_save{
+    width: 50px;
+    color: white;
+    background-color: #0c3dfc;
+    border-radius: 5px;
+}
+.btn_save_off{
+    /*display: none;*/
 }
